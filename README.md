@@ -1,4 +1,14 @@
+<p align="center">
+  <img src="docs/screenshots/banner.png" alt="ReceiptSnap Banner">
+</p>
+
 # ReceiptSnap
+
+![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge\&logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge\&logo=dart)
+![Hive](https://img.shields.io/badge/Hive-Database-F4B400?style=for-the-badge)
+![ML Kit](https://img.shields.io/badge/Google_ML_Kit-OCR-34A853?style=for-the-badge)
+![PDF](https://img.shields.io/badge/PDF-Reports-EA4335?style=for-the-badge)
 
 ReceiptSnap is a modern AI-powered Flutter application that helps users scan, organize, and analyze receipts with a clean fintech-inspired experience.
 
@@ -26,27 +36,33 @@ The app uses OCR (Optical Character Recognition) to automatically extract receip
 
 ## Home
 
-![Home](docs/screenshots/home.png)
+<p align="center">
+<img src="docs/screenshots/home.png" width="300">
+</p>
 
 ## Scan
 
-![Scan](docs/screenshots/scan.png)
-
-## Receipt Review
-
-![Review](docs/screenshots/review.png)
+<p align="center">
+<img src="docs/screenshots/scan.png" width="300">
+</p>
 
 ## Receipts
 
-![Receipts](docs/screenshots/receipts.png)
+<p align="center">
+<img src="docs/screenshots/receipts.png" width="300">
+</p>
 
 ## Insights
 
-![Insights](docs/screenshots/insights.png)
+<p align="center">
+<img src="docs/screenshots/insights.png" width="300">
+</p>
 
 ## Profile
 
-![Profile](docs/screenshots/profile.png)
+<p align="center">
+<img src="docs/screenshots/profile.png" width="300">
+</p>
 
 ---
 
@@ -61,72 +77,33 @@ The app uses OCR (Optical Character Recognition) to automatically extract receip
 
 ---
 
-# Project Structure
+# Architecture
 
-```bash
-lib/
-├── screens/
-├── services/
-├── widgets/
-├── models/
-└── main.dart
-```
+OCR Image → ML Kit → Data Extraction → Hive Storage → Analytics Dashboard → PDF Reports
 
 ---
 
-# Installation
+# Challenges Solved
 
-## Clone the repository
-
-```bash
-git clone https://github.com/SalmaEzzer/receiptsnap.git
-```
-
-## Navigate to project
-
-```bash
-cd receiptsnap
-```
-
-## Install dependencies
-
-```bash
-flutter pub get
-```
-
-## Run the app
-
-```bash
-flutter run
-```
-
----
-
-# APK Build
-
-Generate APK:
-
-```bash
-flutter build apk --release
-```
-
-APK output:
-
-```bash
-build/app/outputs/flutter-apk/app-release.apk
-```
+* Receipt OCR parsing
+* Automatic amount detection
+* Expense categorization
+* Monthly filtering system
+* Local-first data storage
+* PDF report generation
+* Responsive mobile UI
 
 ---
 
 # Future Improvements
 
-* Cloud backup
-* Authentication system
-* AI spending recommendations
-* Dark mode
-* Budget goals
-* Multi-currency support
-* Firebase sync
+* Firebase Authentication
+* Cloud Sync
+* AI Spending Recommendations
+* Budget Goals
+* Multi-device Synchronization
+* Multi-currency Support
+* Smart Financial Insights
 
 ---
 
@@ -136,9 +113,3 @@ Developed by Salma Ezzerrouti
 
 GitHub:
 https://github.com/SalmaEzzer
-
----
-
-# License
-
-This project is licensed under the MIT License.
